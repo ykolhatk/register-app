@@ -16,9 +16,9 @@ pipeline
             }
         }
     stage('Checkout')
-    [
+    {
         git branch: 'main', credentialsId: 'github', url: 'https://github.com/ykolhatk/register-app.git'
-    ]
+    }
     stage('Build')
     {
       steps{
